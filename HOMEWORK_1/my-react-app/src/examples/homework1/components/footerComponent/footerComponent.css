@@ -1,0 +1,17 @@
+#footer {
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    gap: 500px;
+    color: white;
+    padding: 20px;
+
+}
+#social-media {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
