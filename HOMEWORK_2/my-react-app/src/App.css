@@ -11,10 +11,24 @@
   gap:20px;
 }
 #column-one {
-  background-color: aqua;
+  background-color: rgb(87, 126, 13);
   padding: 10px;
+  color:rgb(227, 227, 181);
+  border-radius: 8px;
+  box-shadow: 5px 5px rgb(44, 37, 37);
 }
 #column-two {
-  background-color: aquamarine;
+  background-color: rgb(59, 178, 81);
   padding: 10px;
+  color:rgb(227, 227, 181);
+  border-radius: 8px;
+  box-shadow: 5px 5px rgb(44, 37, 37);
+}
+
+#list-div {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
