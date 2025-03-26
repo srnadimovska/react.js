@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.div-app {
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr ) ;
+  gap:20px;
+}
+#column-one {
+  background-color: aqua;
+  padding: 10px;
+}
+#column-two {
+  background-color: aquamarine;
+  padding: 10px;
+}
