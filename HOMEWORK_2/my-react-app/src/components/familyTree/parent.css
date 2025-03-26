@@ -1,0 +1,10 @@
+#parent-div {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+h1 {
+    color: rgb(52, 10, 91);
+    font-style: italic;
+    text-shadow: 2px 2px grey;
+}
