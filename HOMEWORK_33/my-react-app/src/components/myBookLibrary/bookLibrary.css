@@ -1,0 +1,20 @@
+.books-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+}
+
+#not-available {
+    color:red;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+button {
+    border-radius: 8px;
+    width: 250px;
+    margin:10px;
+    border: 2px solid darkgreen;
+    color: darkgreen;
+    
+}
