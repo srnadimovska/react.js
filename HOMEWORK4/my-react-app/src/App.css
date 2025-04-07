@@ -2,7 +2,29 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
+.div-url {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
 
+.div-show {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 20px;
+}
+.div-show button {
+  background-color: antiquewhite;
+  color:brown;
+  padding: 15 px 30px;
+  width: 200px;
+  cursor:pointer;
+  
+}
