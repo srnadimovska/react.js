@@ -1,4 +1,5 @@
 import { useState , useEffect} from 'react'
+import "./randomUserFetch.css"
 function RandomUserFetcher () 
 {
 
@@ -22,14 +23,14 @@ function RandomUserFetcher ()
     
 
     return (
-      <div>
+      <div className='user-container'>
         <button onClick={newRandomUser}>Show random user</button>
         {user && (
-            <div>
-                <h2>{user.name}</h2>
-                <p>{user.city}</p>
-                <p>{user.phone}</p>
-                <p>{user.company.name}</p>
+            <div className='user-div'>
+                <h2>Name: {user.name}</h2>
+                <p>City: {user.address.city}</p>
+                <p>Phone: {user.phone}</p>
+                <p>Company: {user.company.name}</p>
 
             </div>
         )}

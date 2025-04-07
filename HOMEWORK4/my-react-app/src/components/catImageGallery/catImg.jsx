@@ -1,7 +1,7 @@
-
+import "./catImg.css"
 function CatImg({url}) {
     return (
-        <div>
+        <div className="cat-div" >
             <img src={url} alt="CatImg" />
         </div>
     )
