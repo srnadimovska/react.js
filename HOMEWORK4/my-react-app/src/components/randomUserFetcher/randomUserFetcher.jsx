@@ -8,11 +8,15 @@ function RandomUserFetcher ()
     
 
     useEffect(() => {
-        if(userId === null) return
+
+        // if(userId === null) return
 
         fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
         .then((response) => response.json())
         .then((data) => setUser(data))
+        .catch((error) => {
+            console.log("There is a problem fetching the data", error)
+        })
     }, [userId])
 
     const newRandomUser = () => {
@@ -25,7 +29,7 @@ function RandomUserFetcher ()
     return (
       <div className='user-container'>
         <button onClick={newRandomUser}>Show random user</button>
-        {user && (
+        {/* {user && (
             <div className='user-div'>
                 <h2>Name: {user.name}</h2>
                 <p>City: {user.address.city}</p>
@@ -33,7 +37,17 @@ function RandomUserFetcher ()
                 <p>Company: {user.company.name}</p>
 
             </div>
-        )}
+        )} */}
+
+        {user ?(
+            <div className='user-div'>
+            <h2>Name: {user.name}</h2>
+            <p>City: {user.address.city}</p>
+            <p>Phone: {user.phone}</p>
+            <p>Company: {user.company.name}</p>
+
+        </div>
+        ) : null }
 
       </div>
     )
