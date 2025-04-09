@@ -1,0 +1,51 @@
+.uncontrolled-div {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.uncontrolled-div form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .uncontrolled-div label {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .uncontrolled-div input,
+  .uncontrolled-div textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  .uncontrolled-div textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .uncontrolled-div button {
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 15px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .uncontrolled-div button:hover {
+    background-color: #218838;
+  }
