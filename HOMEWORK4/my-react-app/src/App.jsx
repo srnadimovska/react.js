@@ -29,7 +29,7 @@ function App() {
     <>
     {/* <DynamicCounter /> */}
 
-    {/* <RandomUserFetcher /> */}
+    <RandomUserFetcher />
 
     <div className='div-show'>
       <button onClick={fetchCatImages}>Fetch Cat Images</button>
