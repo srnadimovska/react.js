@@ -4,7 +4,7 @@ import { useState } from "react"
 import "./toDoList.css"
 
 const ToDoList = () => {
-    const { toDo,  deleteToDo, editToDo, addComplete} = useContext(ToDoContext)
+    const { toDo,  deleteToDo, editToDo , addComplete} = useContext(ToDoContext)
     const [ edit, setEdit] = useState(null)
     const [newTask, setNewTask] = useState('')
 
@@ -19,7 +19,7 @@ const ToDoList = () => {
     }
 
     if(toDo.length === 0) {
-        return <p>Add new task</p>
+        return <p>Add task to your task list</p>
     }
 
     return (
@@ -34,6 +34,7 @@ const ToDoList = () => {
                     {edit === index ? 
                         <>
                         <input 
+                        type="text"
                         value={newTask}
                         onChange={(event) => setNewTask(event.target.value)}
                         />
