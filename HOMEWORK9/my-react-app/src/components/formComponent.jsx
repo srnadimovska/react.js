@@ -96,6 +96,13 @@ if (
     setData({
         name,email,password,address,country
     })
+
+        setName("")
+        setEmail("")
+        setPassword("")
+        setAddress("")
+        setCountry("")
+
 } else {
     setSubmitData(null)
 }
@@ -124,7 +131,7 @@ return (
         placeholder="enter your username"
         onChange={handleInputName}
         />
-        {nameError && <h3>{nameError}</h3>}
+        {nameError && <h3 style={{color:"red"}}>{nameError}</h3>}
         <label>Password:</label>
         <input
         type="password"
@@ -132,7 +139,7 @@ return (
         placeholder="Enter your password"
         onChange={handleInputPassword}
         />
-        {passwordError && <h3>{passwordError}</h3>}
+        {passwordError && <h3 style={{color:"red"}}>{passwordError}</h3>}
         <label>Email:</label>
         <input
         type="text"
@@ -140,7 +147,7 @@ return (
         placeholder="Enter your email"
         onChange={handleInputEmail}
         />
-        {emailError && <h3>{emailError}</h3>}
+        {emailError && <h3 style={{color:"red"}}>{emailError}</h3>}
         <label>Address:</label>
         <input
         type="text"
@@ -148,7 +155,7 @@ return (
         placeholder="Enter your address"
         onChange={handleInputAddress}
         />
-        {addressError && <h3>{addressError}</h3>}
+        {addressError && <h3 style={{color:"red"}}>{addressError}</h3>}
         <label>Select your country</label>
         <select value={country} onChange={handleInputCountry}>
                 <option value="">Select</option>
@@ -157,7 +164,7 @@ return (
                 <option value="greece">Greece</option>
                 <option value="croatia">Croatia</option>
         </select>
-        {countryError && <h3>{countryError}</h3>}
+        {countryError && <h3 style={{color:"red"}}>{countryError}</h3>}
 
         <button type="submit">Submit your info</button>
         <button onClick={handleClearData}>Clear</button>
